@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Sal Grade details</h1>
+        <table border="3px">
+            <h1>
+            <tr>
+                <th>Grade</th>
+                <th>Low sal</th>
+                <th>High sal</th>
+            </tr>
+            </h1>
+            {% for SO in QLSO %}
+            <tr> 
+                <td>{{SO.grade}}</td>
+                <td>{{SO.lowsal}}</td>
+                <td>{{SO.highsal}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

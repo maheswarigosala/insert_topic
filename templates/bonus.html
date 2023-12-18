@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> Bonus</h1>
+        <table border="3px">
+            <h1>
+            <tr>
+                <th>BID</th>
+                <th>Bonus</th>
+            </tr>
+            </h1>
+            {% for BO in QLBO %}
+            <tr>
+                <td>{{BO.bid}}</td>
+                <td>{{BO.bonus}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
